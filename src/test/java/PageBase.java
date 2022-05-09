@@ -31,4 +31,6 @@ class PageBase {
         WebElement bodyElement = this.waitVisibiltyAndFindElement(By.tagName("body"));
         return bodyElement.getText();
     }
+
+   
 }

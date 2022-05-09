@@ -31,12 +31,21 @@ public class GlassdoorTest {
     }
 
     @Test
+    public void accountSettings(){
+        this.login();
+        DashboardPage dashboardPage = new DashboardPage(this.driver);
+        AccountPage accountPage = dashboardPage.accountSettings();
+        System.out.println(accountPage.getMainCardTitle());
+       Assert.assertTrue(accountPage.getMainCardTitle().contains ("Account"));
+    }
+
+    @Test
     public void logout (){
         this.login();
         DashboardPage dashboardPage = new DashboardPage(this.driver);
         MainPage mainPage = dashboardPage.logOut();
         System.out.println(mainPage.getMainCardTitle());
-       Assert.assertTrue(dashboardPage.getMainCardTitle().contains ("You deserve a job that loves you back"));
+       Assert.assertTrue(mainPage.getMainCardTitle().contains ("You deserve a job that loves you back"));
     }
 
     @After

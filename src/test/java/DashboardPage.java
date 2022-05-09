@@ -1,19 +1,18 @@
 import org.junit.*;
-import io.github.bonigarcia.wdm. WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.interactions.Actions;
+
+
 
 class DashboardPage extends PageBase{
 
     private By cardBy = By.xpath("//div[@class='siteHeader__HeaderStyles__navigationWrapper']/div/div[@class='d-flex flex-row align-items-center']/div[@class='col']/h2");
-    private By logoutButton=By.linkText("Sign Out");
+    private By userProfileMenu=By.xpath("//div[@class='d-flex justify-content-between align-items-center px-std px-md-lg siteHeader__HeaderStyles__mainNav']/div[@class='d-none d-lg-flex']/div/div[@class='d-flex']/span");
+    private By logoutButton = By.linkText("Sign Out");
+    private By accountSettingsButton = By.linkText("Account Settings");
 
     public DashboardPage (WebDriver driver){
         super(driver);
@@ -23,26 +22,26 @@ class DashboardPage extends PageBase{
    }
 
    public MainPage logOut(){
+       // locate the menu to hover over using its xpath
+       WebElement ele = this.waitVisibiltyAndFindElement(userProfileMenu);
+       // Initiate mouse action using Actions class
+       Actions actions = new Actions(this.driver);
+       // move the mouse to the earlier identified menu option
+       actions.moveToElement(ele).perform();
        this.waitVisibiltyAndFindElement(logoutButton).click();
-        return new MainPage(this.driver);
 
-
-    /*    // Locating the Main Menu (Parent element)
-WebElement mainMenu = driver.findElement(By.linkText("Sign Out"));
-
-//Instantiating Actions class
-Actions actions = new Actions(driver);
-
-//Hovering on main menu
-actions.moveToElement(mainMenu);
-
-// Locating the element from Sub Menu
-WebElement subMenu = driver.findElement(By.xpath("<Xpath of the sub element>"));
-
-//To mouseover on sub menu
-actions.moveToElement(subMenu);
-
-//build()- used to compile all the actions into a single step 
-actions.click().build().perform();*/
+       return new MainPage(this.driver);
    }
+
+   public AccountPage accountSettings(){
+    // locate the menu to hover over using its xpath
+    WebElement ele = this.waitVisibiltyAndFindElement(userProfileMenu);
+    // Initiate mouse action using Actions class
+    Actions actions = new Actions(this.driver);
+    // move the mouse to the earlier identified menu option
+    actions.moveToElement(ele).perform();
+    this.waitVisibiltyAndFindElement(accountSettingsButton).click();
+
+    return new AccountPage(this.driver);
+}
 }

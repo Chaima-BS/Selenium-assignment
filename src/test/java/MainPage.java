@@ -14,6 +14,7 @@ import org.openqa.selenium.NoSuchElementException;
 class MainPage extends PageBase {
      private By cardBy = By.xpath("//div[@class='lockedSignUp d-flex align-items-center justify-content-center flex-column top-padding-zero']/h1");
    private By loginMenuButton=By.xpath("//div[@class='d-flex justify-content-between LockedHomeHeaderStyles__fullWidth']/div/button");
+  
    public MainPage (WebDriver driver){
         super(driver);
         this.driver.get("https://www.glassdoor.com/index.htm");
