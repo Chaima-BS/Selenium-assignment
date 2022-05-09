@@ -5,12 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 
-public class AccountPage extends PageBase{
+public class ResultPage extends PageBase{
+    private By cardBy = By.xpath("//div[@class='my-std']/div/div[@class='textAndIconContainer']/div[@class='text']/span");
 
-    private By cardBy = By.xpath("//div[@id='MainCol']/div[@class='module spacious']/h1");
-
-
-    public AccountPage (WebDriver driver){
+    public ResultPage (WebDriver driver){
         super(driver);
    }
    public String getMainCardTitle(){

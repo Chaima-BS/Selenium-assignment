@@ -1,0 +1,9 @@
+login_cardTitle = Hello, what would you like to explore today?
+logout_cardTitle = You deserve a job that loves you back
+rating=3
+Employment_Status = option_PART_TIME
+Review_Headline = Review
+Pros=Lorem ipsum dolor sit amet
+Cons=consectetur adipiscing elit. Nulla vitae tortor ornare
+job_Function = option_1005
+review_cardTitle = Thanks for posting your employer review. Could you leave an anonymous salary report for SAP?
