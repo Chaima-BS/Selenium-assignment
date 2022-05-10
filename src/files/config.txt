@@ -1,6 +1,10 @@
 page_title = Glassdoor Job Search | You deserve a job that loves you back
+email = noyavi7485@3dmasti.com
+password = noyavi7485
 login_cardTitle = Hello, what would you like to explore today?
 logout_cardTitle = You deserve a job that loves you back
+companyName = SAP
+status = 1
 rating=3
 Employment_Status = option_PART_TIME
 Review_Headline = Review
@@ -8,3 +12,6 @@ Pros=Lorem ipsum dolor sit amet
 Cons=consectetur adipiscing elit. Nulla vitae tortor ornare
 job_Function = option_1005
 review_cardTitle = Thanks for posting your employer review. Could you leave an anonymous salary report for SAP?
+image_upload = workplace.png
+caption = image upload caption
+image_upload_cardTitle = Thanks for posting your photo. Check your email to activate your account and get unlimited access.

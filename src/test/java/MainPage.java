@@ -23,6 +23,9 @@ class MainPage extends PageBase {
    public String getPageTitle() {
      return this.driver.getTitle();
  }
+ public String getMainCardTitle(){
+     return this.waitVisibiltyAndFindElement(cardBy).getText();
+}
 
 
 

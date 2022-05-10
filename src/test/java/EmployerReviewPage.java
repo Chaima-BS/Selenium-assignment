@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 
 
 
-public class ReviewPage extends PageBase{
+public class EmployerReviewPage extends PageBase{
 
      private By companyNameInputBox=By.name("survey-AddCompany-component");
      private By statusSelectBox=By.xpath("//div[@class='col-12 col-md-7 px-0 mt-lg mb css-j7qwjs ew8s0qn0']/div[@class='css-47sx24 egu3u860']");
@@ -21,7 +21,7 @@ public class ReviewPage extends PageBase{
 
 
  
-    public ReviewPage (WebDriver driver){
+    public EmployerReviewPage (WebDriver driver){
          super (driver);
     }
  
@@ -45,7 +45,7 @@ public class ReviewPage extends PageBase{
         WebElement job_Function = this.waitVisibiltyAndFindElement(jobFunctionSelectBox);
         JavascriptExecutor jse2 = (JavascriptExecutor)driver;
         jse2.executeScript("arguments[0].scrollIntoView()", job_Function); 
-        this.waitVisibiltyAndFindElement(jobFunctionSelectBox).click();
+        job_Function.click();
         this.waitVisibiltyAndFindElement(selectedJobFunction).click();
 
         this.waitVisibiltyAndFindElement(termsOfUseCheckBox).click();
