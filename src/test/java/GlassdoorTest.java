@@ -46,6 +46,16 @@ public class GlassdoorTest {
     }
 
     @Test
+    public void logout (){
+        this.login();
+        DashboardPage dashboardPage = new DashboardPage(this.driver);
+        MainPage mainPage = dashboardPage.logOut();
+        ReadConfFile conf = new ReadConfFile();
+        //System.out.println(mainPage.getMainCardTitle());
+       Assert.assertTrue(mainPage.getMainCardTitle().contains (conf.loadProperties().getProperty("logout_cardTitle")));
+    }
+
+   @Test
     public void writeReview(){
         this.login();
         
@@ -71,15 +81,6 @@ public class GlassdoorTest {
         Assert.assertTrue(resultPage.getUploadedPhotoCardTitle().contains (conf.loadProperties().getProperty("image_upload_cardTitle")));
     }
 
-    @Test
-    public void logout (){
-        this.login();
-        DashboardPage dashboardPage = new DashboardPage(this.driver);
-        MainPage mainPage = dashboardPage.logOut();
-        ReadConfFile conf = new ReadConfFile();
-        //System.out.println(mainPage.getMainCardTitle());
-       Assert.assertTrue(mainPage.getMainCardTitle().contains (conf.loadProperties().getProperty("logout_cardTitle")));
-    }
 
     @After
     public void close(){

@@ -13,5 +13,5 @@ Cons=consectetur adipiscing elit. Nulla vitae tortor ornare
 job_Function = option_1005
 review_cardTitle = Thanks for posting your employer review. Could you leave an anonymous salary report for SAP?
 image_upload = workplace.png
-caption = image upload caption
+caption = image upload caption.
 image_upload_cardTitle = Thanks for posting your photo. Check your email to activate your account and get unlimited access.
