@@ -2,9 +2,4 @@
 build
 bin
 .vscode
-.settings
-.classpath
-.project
-gradle
-gradlew.bat
-gradlew
+
