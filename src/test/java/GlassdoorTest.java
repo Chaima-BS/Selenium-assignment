@@ -25,7 +25,18 @@ public class GlassdoorTest {
     }
 
     @Test
+    public void pageTitleTest (){
+        MainPage mainPage = new MainPage(this.driver);
+        //String pageTitle = mainPage.getPageTitle();
+        System.out.println("Your page title Is : " + mainPage.getPageTitle());
+        ReadConfFile conf = new ReadConfFile();
+        Assert.assertTrue(mainPage.getPageTitle().contains (conf.loadProperties().getProperty("page_title")));
+    }
+    
+
+    @Test
     public void login (){
+       //this.pageTitleTest();
         MainPage mainPage = new MainPage(this.driver);
         LoginPage loginPage = mainPage.openLogin();
         DashboardPage dashboardPage=loginPage.login("noyavi7485@3dmasti.com","noyavi7485");
@@ -34,7 +45,7 @@ public class GlassdoorTest {
         Assert.assertTrue(dashboardPage.getMainCardTitle().contains (conf.loadProperties().getProperty("login_cardTitle")));
     }
 
-    @Test
+   /* @Test
     public void writeReview(){
         this.login();
         DashboardPage dashboardPage = new DashboardPage(this.driver);
@@ -54,7 +65,7 @@ public class GlassdoorTest {
         ReadConfFile conf = new ReadConfFile();
         //System.out.println(mainPage.getMainCardTitle());
        Assert.assertTrue(mainPage.getMainCardTitle().contains (conf.loadProperties().getProperty("logout_cardTitle")));
-    }
+    }*/
 
     @After
     public void close(){

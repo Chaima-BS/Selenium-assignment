@@ -34,6 +34,7 @@ class DashboardPage extends PageBase{
        return new MainPage(this.driver);
    }
 
+
    public ReviewTypePage openWriteReview(){
     // locate the menu to hover over using its xpath
     WebElement ele = this.waitVisibiltyAndFindElement(companiesMenu);

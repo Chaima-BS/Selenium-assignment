@@ -20,9 +20,11 @@ class MainPage extends PageBase {
         this.driver.get("https://www.glassdoor.com/index.htm");
    }
 
-   public String getMainCardTitle(){
-     return this.waitVisibiltyAndFindElement(cardBy).getText();
-}
+   public String getPageTitle() {
+     return this.driver.getTitle();
+ }
+
+
 
    public LoginPage openLogin(){
     //System.out.println(loginMenuButton.);

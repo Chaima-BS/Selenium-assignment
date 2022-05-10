@@ -1,3 +1,4 @@
+page_title = Glassdoor Job Search | You deserve a job that loves you back
 login_cardTitle = Hello, what would you like to explore today?
 logout_cardTitle = You deserve a job that loves you back
 rating=3
