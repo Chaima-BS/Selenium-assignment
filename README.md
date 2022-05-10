@@ -1,25 +1,7 @@
 # Big assignment
 
-Video: https://www.youtube.com/watch?v=IBNwYH4Ko5s
-
-All of you have to do a big assignment that have to be presented in the future.
-
-Our next big assignment will be a selenium test that tests a webpage that available publicly on the internet and choosen by you.
-Every student has to have to choose different website.
+A selenium test that tests a webpage that available publicly on the internet.
+##https://www.glassdoor.com/index.htm
 
 
-There are many task that you can do, but there are obligatory tasks as well.
-These tasks can be found in [this spreadsheet](https://docs.google.com/spreadsheets/d/1lwZlTShULZVSCxM-ew880VkdSffrruTUF229c-FsC5k/edit?usp=sharing).
-You will need to copy this spreadsheet and fill the yelllow zones.
-
-
-The steps of the big assignment:
-
-- Find a webpage that has login and some basic functionality that wasn't choosen by anybody yet. You can find here the reserved pages in [this spreadsheet](https://docs.google.com/spreadsheets/d/1pVWcnxBJkw6f9679S2l4ZuaLa-QWQEEYAoFtjM3Bbw4/edit?usp=sharing).
-- Fill [this form](https://docs.google.com/forms/d/e/1FAIpQLSeDvCWjhM4KrUV_1eQc45taf--5Uz798jruwcFd8vjvXVAyHg/viewform?usp=sf_link) about your webpage choose. By filling the form, your reserve will be added to the spreadsheet mentioned in the previous bullet point.
-- Make your test program and publish on **Github** (Yes not on GitLab, now I ask you to use the public https://github.com/ to improve your visibility on the internet as programmer).
-- Copy the [point spreadsheet](https://docs.google.com/spreadsheets/d/1lwZlTShULZVSCxM-ew880VkdSffrruTUF229c-FsC5k/edit?usp=sharing) and fill the github url and with the tasks that you have done.
-- Present your solution.
-If you cannot explain fully that you wrote and does not convince me that you wrote it the work is failed and you have to choose a new page and redo the task.
-
-You have **3 weeks** to do the assignment. I will share presentation slots after 25th of April.
+The implemented tests can be found in [this spreadsheet](https://docs.google.com/spreadsheets/d/1lwZlTShULZVSCxM-ew880VkdSffrruTUF229c-FsC5k/edit?usp=sharing).
