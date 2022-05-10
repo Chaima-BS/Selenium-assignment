@@ -45,7 +45,7 @@ public class GlassdoorTest {
         Assert.assertTrue(dashboardPage.getMainCardTitle().contains (conf.loadProperties().getProperty("login_cardTitle")));
     }
 
-   /* @Test
+    @Test
     public void writeReview(){
         this.login();
         DashboardPage dashboardPage = new DashboardPage(this.driver);
@@ -65,7 +65,7 @@ public class GlassdoorTest {
         ReadConfFile conf = new ReadConfFile();
         //System.out.println(mainPage.getMainCardTitle());
        Assert.assertTrue(mainPage.getMainCardTitle().contains (conf.loadProperties().getProperty("logout_cardTitle")));
-    }*/
+    }
 
     @After
     public void close(){
