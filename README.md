@@ -1,6 +1,6 @@
 # Big assignment
 
-A selenium test that tests a webpage that available publicly on the internet.
+A selenium test that tests a webpage available publicly on the internet.
 
 #### https://www.glassdoor.com/index.htm
 
